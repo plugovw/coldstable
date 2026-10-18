@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Кирилл Егоров — графический дизайнер</title>
+<meta name="description" content="Кирилл Егоров — графический дизайнер из Москвы. Портфолио: айдентика, постеры, типографика.">
+<meta name="theme-color" content="#0A0A0A">
+<meta property="og:title" content="Кирилл Егоров — графический дизайнер">
+<meta property="og:description" content="Портфолио: айдентика, постеры, типографика.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%230A0A0A' stroke='%23F5F7FA' stroke-width='4'/%3E%3Cpath d='M50 4a46 46 0 0 1 0 92z' fill='%23F5F7FA'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0A0A;--g1:#141414;--g2:#1E1E1E;--g3:#2B2B2B;--mut:#7d8087;--fg:#F5F7FA;--line:rgba(245,247,250,.14);--pad:clamp(20px,4vw,64px);--serif:'Instrument Serif',Georgia,serif;--sans:'Inter Tight',system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit;margin:0;padding:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px);color-scheme:dark}
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{background:var(--bg);color:var(--fg);font:300 clamp(15px,1.1vw,17px)/1.6 var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;text-align:left}
+:focus-visible{outline:1px solid var(--fg);outline-offset:4px}
+.l{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}.l>.i{display:block;will-change:transform}
+.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:.9}
+.small{font-size:.8rem;color:var(--mut);letter-spacing:.02em}
+.wrap{padding:0 var(--pad)}
+section{position:relative}
+/* progress + nav */
+#bar{position:fixed;top:0;left:0;height:1px;width:100%;background:var(--fg);transform:scaleX(0);transform-origin:0 50%;z-index:60}
+nav{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:calc(22px + env(safe-area-inset-top,0px)) var(--pad) 22px;mix-blend-mode:difference;color:#fff}
+nav .logo{font-family:var(--serif);font-size:1.4rem}
+nav ul{display:flex;gap:2.2rem;list-style:none;font-size:.85rem}
+.ul{position:relative;display:inline-block}.ul::after{content:"";position:absolute;left:0;bottom:-2px;width:100%;height:1px;background:currentColor;transform:scaleX(0);transform-origin:100% 50%;transition:transform .6s cubic-bezier(.7,0,.2,1)}
+.ul:hover::after,.ul:focus-visible::after{transform:scaleX(1);transform-origin:0 50%}
+.nl{position:relative;display:block;transition:opacity .5s,transform .7s cubic-bezier(.16,1,.3,1)}
+.nl .r{display:block;overflow:hidden;height:1.3em;line-height:1.3}
+.nl .r>span{display:block;transition:transform .7s cubic-bezier(.7,0,.2,1)}
+.nl .r>span::after{content:attr(data-t);display:block}
+.nl::before{content:"";position:absolute;left:-14px;top:50%;width:5px;height:5px;margin-top:-2.5px;border-radius:50%;background:currentColor;transform:scale(0);transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.nl:hover .r>span,.nl:focus-visible .r>span{transform:translateY(-50%)}
+.nl:hover::before,.nl:focus-visible::before{transform:scale(1)}
+.nl:hover,.nl:focus-visible{transform:translateX(6px)}
+nav ul:has(.nl:hover) .nl:not(:hover),nav ul:has(.nl:focus-visible) .nl:not(:focus-visible){opacity:.3}
+#mb{display:none;font-size:.85rem}
+#menu{position:fixed;inset:0;background:var(--bg);z-index:49;display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad);clip-path:inset(0 0 100% 0);visibility:hidden}
+#menu a{font-family:var(--serif);font-size:15vw;line-height:1.05;display:block;transition:opacity .5s,transform .7s cubic-bezier(.16,1,.3,1)}
+#menu a:hover,#menu a:focus-visible{transform:translateX(4vw)}
+#menu:has(a:hover) a:not(:hover),#menu:has(a:focus-visible) a:not(:focus-visible){opacity:.25}
+/* preloader */
+#pre{position:fixed;inset:0;background:var(--bg);z-index:100;display:flex;flex-direction:column;justify-content:space-between;padding:var(--pad)}
+#pre .n{font-family:var(--serif);font-size:clamp(6rem,24vw,22rem);line-height:.8;align-self:flex-end;font-variant-numeric:tabular-nums}
+#pre .ln{height:1px;background:var(--fg);transform:scaleX(0);transform-origin:0 50%}
+/* hero */
+#hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--pad) 40px;overflow:hidden}
+#hero h1{font-size:clamp(4rem,17.5vw,19rem);transform-origin:0 100%}
+#hero h1 .l:nth-child(2){padding-left:12vw}
+.hmeta{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;margin-top:5vh;border-top:1px solid var(--line);padding-top:20px}
+.hmeta p{max-width:22ch;font-size:1.05rem}
+.scr{display:flex;align-items:center;gap:14px}.scr i{display:block;width:1px;height:48px;background:var(--line);position:relative;overflow:hidden}
+.scr i::after{content:"";position:absolute;inset:0;background:var(--fg);animation:dr 2.2s cubic-bezier(.7,0,.2,1) infinite}
+@keyframes dr{0%{transform:translateY(-100%)}60%,100%{transform:translateY(100%)}}
+/* about */
+#about{padding:22vh var(--pad) 16vh;display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px}
+#about .k{grid-column:1/4}#about .t{grid-column:5/13}
+#about .t p:first-child{font-family:var(--serif);font-size:clamp(1.9rem,4.2vw,4.4rem);line-height:1.08;letter-spacing:-.01em}
+.pf{grid-column:2/10;margin-top:14vh;position:relative;overflow:hidden;aspect-ratio:4/3;clip-path:inset(100% 0 0 0);background:var(--g1)}
+.pf img{position:absolute;left:0;top:-8%;width:100%;height:116%;object-fit:cover;filter:grayscale(1) contrast(1.05);will-change:transform;display:block}
+.pc{grid-column:10/13;align-self:end;margin-top:14vh;padding-left:12px;border-left:1px solid var(--line)}
+#about .t p+p{margin-top:4vh;max-width:46ch;color:#aeb2b9;margin-left:auto}
+/* works */
+#works{padding:8vh var(--pad) 10vh}
+.wh{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:10vh}
+.wh h2{font-size:clamp(3rem,9vw,9rem)}
+.w{display:block;cursor:zoom-in}
+.fr{position:relative;overflow:hidden;background:var(--g1);aspect-ratio:5/7;clip-path:inset(100% 0 0 0)}
+.fr .px{position:absolute;left:0;top:-10%;width:100%;height:120%;will-change:transform}
+.fr img{width:100%;height:100%;display:block;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.w:hover img,.w:focus-visible img{transform:scale(1.06)}
+.grp{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;margin-bottom:22vh}.grp:last-child{margin-bottom:0}
+.gi{grid-column:1/6;grid-row:1;position:sticky;top:16vh;align-self:start}.gt{font-size:clamp(2.6rem,5.6vw,6rem);margin:2vh 0 5vh}
+.gi dt{margin-top:2.2rem;padding-top:14px;border-top:1px solid var(--line)}.gi dd{color:#aeb2b9;max-width:48ch;margin-top:8px}
+.gp{grid-column:7/13;grid-row:1;display:grid;grid-template-columns:repeat(2,1fr);gap:8vh 24px;align-items:start}.gp .w:nth-child(even){margin-top:12vh}
+.grp:nth-of-type(odd) .gi{grid-column:8/13}.grp:nth-of-type(odd) .gp{grid-column:1/7}#fart{position:absolute;inset:0}
+#lb{position:fixed;inset:0;z-index:90;background:rgba(10,10,10,.97);display:grid;place-items:center;padding:56px var(--pad) var(--pad);opacity:0;visibility:hidden;transition:opacity .5s,visibility .5s;cursor:zoom-out}
+#lb.on{opacity:1;visibility:visible}#lb span{position:absolute;top:calc(20px + env(safe-area-inset-top,0px));right:var(--pad)}#lb img{max-width:100%;max-height:calc(100svh - 90px);object-fit:contain}
+.cb{grid-column:1/13;margin-top:14vh;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cbtn{width:100%;display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px 2rem;padding:clamp(24px,4vw,56px) 0}.cbtn .small{grid-column:1/3}
+.cbt{font-size:clamp(2.4rem,7vw,7rem);line-height:1;transition:transform .8s cubic-bezier(.16,1,.3,1)}
+.cbtn b{display:grid;place-items:center;width:clamp(48px,6vw,84px);aspect-ratio:1;border:1px solid var(--line);border-radius:50%;font-weight:300;font-size:1.4rem;transition:background .5s,color .5s,transform .7s cubic-bezier(.16,1,.3,1)}
+.cbtn:hover .cbt,.cbtn:focus-visible .cbt{transform:translateX(2vw)}.cbtn:hover b,.cbtn:focus-visible b{background:var(--fg);color:var(--bg);transform:rotate(-45deg)}
+#col{position:fixed;inset:0;z-index:80;background:var(--bg);overflow-y:auto;overscroll-behavior:contain;clip-path:inset(0 0 100% 0);visibility:hidden;padding:0 var(--pad) 12vh}
+.ch{display:flex;justify-content:space-between;align-items:flex-end;padding:calc(110px + env(safe-area-inset-top,0px)) 0 20px;border-bottom:1px solid var(--line);margin-bottom:12vh}.ch h2{font-size:clamp(3rem,9vw,9rem)}
+#colx{position:fixed;top:calc(22px + env(safe-area-inset-top,0px));right:var(--pad);z-index:81;font-size:.85rem;color:var(--fg)}
+.grp.wide .gi{grid-column:1/5}.grp.wide .gp{grid-column:5/13}
+.gp.land{grid-template-columns:repeat(2,1fr)}.gp.land .fr{aspect-ratio:1122/790}.gp.land .w.wide{grid-column:1/3}.gp.land .w:nth-child(even){margin-top:0}
+.cap{display:flex;justify-content:space-between;gap:1rem;margin-top:18px;align-items:baseline}
+.cap h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,2.6vw,2.6rem);line-height:1;transition:transform .7s cubic-bezier(.16,1,.3,1)}
+.w:hover h3{transform:translateX(14px)}
+/* featured */
+#feat{height:100svh;overflow:hidden;background:var(--bg)}
+#feat .box{position:absolute;inset:0;clip-path:inset(18% 32% 18% 32%);overflow:hidden;background:var(--g1)}
+#feat .box img{width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:scale(1.4)}
+#feat .tx{position:absolute;left:var(--pad);right:var(--pad);bottom:var(--pad);z-index:2;mix-blend-mode:difference;color:#fff}
+#feat .ph{position:absolute;left:var(--pad);right:var(--pad);bottom:0;opacity:0}
+#feat .ph:first-child{opacity:1}
+#feat .ph .serif{font-size:clamp(2.8rem,10vw,10rem)}
+#feat .top{position:absolute;top:calc(90px + env(safe-area-inset-top,0px));left:var(--pad);right:var(--pad);display:flex;justify-content:space-between;z-index:2;mix-blend-mode:difference;color:#fff}
+#feat .tx{height:clamp(4rem,12vw,11rem)}
+/* services */
+#serv{padding:20vh var(--pad) 14vh}
+#serv h2{font-size:clamp(3rem,9vw,9rem);margin-bottom:10vh}
+.sv{border-top:1px solid var(--line);position:relative}.sv:last-child{border-bottom:1px solid var(--line)}
+.sv::before{content:"";position:absolute;left:0;top:-1px;height:1px;width:100%;background:var(--fg);transform:scaleX(0);transform-origin:0 50%;transition:transform .8s cubic-bezier(.7,0,.2,1)}
+.sv.open::before{transform:scaleX(1)}
+.sv button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:2rem;padding:clamp(20px,3.4vw,44px) 0}
+.sv .nm{font-family:var(--serif);font-size:clamp(2rem,5.6vw,5.6rem);line-height:1;transition:transform .7s cubic-bezier(.16,1,.3,1),color .4s;color:#9a9ea6}
+.sv.open .nm,.sv button:hover .nm{transform:translateX(2vw);color:var(--fg)}
+.sv .pm{width:22px;height:22px;position:relative;flex:none}.sv .pm::before,.sv .pm::after{content:"";position:absolute;left:0;top:50%;width:100%;height:1px;background:currentColor;transition:transform .6s cubic-bezier(.7,0,.2,1)}
+.sv .pm::after{transform:rotate(90deg)}.sv.open .pm::after{transform:rotate(0)}
+.sv .d{display:grid;grid-template-rows:0fr;transition:grid-template-rows .8s cubic-bezier(.7,0,.2,1)}.sv.open .d{grid-template-rows:1fr}
+.sv .d>div{overflow:hidden;display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.sv .d p{max-width:44ch;color:#aeb2b9;padding-bottom:36px}.sv .d span{padding-bottom:36px}
+/* philosophy */
+#phil{padding:22vh var(--pad);min-height:100svh;display:flex;align-items:center}
+#phil p{font-family:var(--serif);font-size:clamp(2.4rem,7.4vw,8rem);line-height:1;letter-spacing:-.02em}
+.wd{display:inline-block;opacity:.14}
+/* contact */
+#contact{padding:18vh var(--pad) 8vh;border-top:1px solid var(--line)}
+#contact .big{display:block;font-family:var(--serif);font-size:clamp(2.6rem,10.4vw,11rem);line-height:.95;letter-spacing:-.025em;word-break:break-word;margin:6vh 0 12vh}
+.soc{display:flex;gap:clamp(1.5rem,5vw,5rem);flex-wrap:wrap;justify-content:space-between}
+.soc ul{list-style:none;display:flex;gap:2.4rem;flex-wrap:wrap}
+footer{display:flex;justify-content:space-between;align-items:center;padding:28px var(--pad) 36px;border-top:1px solid var(--line)}
+#top{display:flex;align-items:center;gap:12px}
+#top b{display:inline-grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;font-weight:300;transition:background .5s,color .5s,transform .6s cubic-bezier(.16,1,.3,1)}
+#top:hover b{background:var(--fg);color:var(--bg);transform:translateY(-4px)}
+@media(max-width:820px){
+nav ul{display:none}#mb{display:block}
+#hero h1 .l:nth-child(2){padding-left:6vw}.hmeta p{font-size:.95rem}
+#about{display:block}#about .k{margin-bottom:5vh}.pf{margin-top:9vh}.pc{margin-top:14px;padding-left:12px}
+.grp{display:block;margin-bottom:14vh}.gi{position:static!important;margin-bottom:8vh}.gp{grid-template-columns:1fr!important;gap:8vh!important}.gp .w{width:86%}.gp .w:nth-child(even){margin:0 0 0 14%}
+.wh{flex-direction:column;align-items:flex-start;gap:12px}
+#feat .box{clip-path:inset(22% 12% 22% 12%)}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important}.fr,.pf{clip-path:none!important}.wd{opacity:1}}
+@media(max-width:820px){.gp.land{grid-template-columns:1fr!important}.gp.land .w{width:100%!important;margin:0!important;grid-column:auto!important}.grp.wide .gi,.grp.wide .gp{grid-column:auto}.ch{flex-direction:column;align-items:flex-start;gap:10px}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div id="pre" aria-hidden="true"><span class="small">Кирилл Егоров — портфолио 2026</span><div><div class="n"><span id="pn">0</span></div><div class="ln"></div></div></div>
+
+<nav>
+  <a href="#hero" class="logo" data-go>К. Е.</a>
+  <ul><li><a class="nl" href="#about" data-go>Обо мне</a></li><li><a class="nl" href="#works" data-go>Работы</a></li><li><a class="nl" href="#serv" data-go>Услуги</a></li><li><a class="nl" href="#contact" data-go>Контакты</a></li></ul>
+  <button id="mb" aria-expanded="false" aria-controls="menu">Меню</button>
+</nav>
+<div id="menu"><a href="#about" data-go>Обо мне</a><a href="#works" data-go>Работы</a><a href="#serv" data-go>Услуги</a><a href="#contact" data-go>Контакты</a></div>
+
+<main>
+<section id="hero">
+  <h1 class="serif rv" data-hero>Кирилл<br>Егоров</h1>
+  <div class="hmeta">
+    <p class="rv">Графический дизайнер из Москвы. Айдентика, постеры, типографика.</p>
+    <a href="#about" class="scr small" data-go><i></i>Листайте вниз</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="k small rv">Обо мне</div>
+  <div class="t">
+    <p class="words">Я проектирую визуальные системы, где каждая линия и каждая пауза между буквами работают на смысл.</p>
+    <p class="rv">Мне 18, я из Москвы. Работаю с айдентикой, типографикой и постерной графикой. Начинаю с тишины и ограничений, а заканчиваю решением, которое невозможно упростить.</p>
+  </div>
+  <figure class="pf"><img src="assets/img-01.jpg" alt="Кирилл Егоров" width="1400" height="1050"></figure>
+  <p class="small pc">Кирилл Егоров<br>Москва, 18 лет</p>
+  <div class="cb"><button id="colb" class="cbtn" aria-haspopup="dialog"><span class="small">Дополнительно · 11 работ в 4 сериях</span><span class="cbt serif">Коллекция постеров</span><b aria-hidden="true">→</b></button></div>
+</section>
+
+<section id="works">
+  <div class="wh"><h2 class="serif rv">Избранные<br>работы</h2><span class="small">2025–2026</span></div>
+  <div class="grp wide"><div class="gi"><span class="small">Фирменный стиль</span><h3 class="gt serif rv">YOJI'S<br>Fashion House</h3><dl><dt class="small">Задача</dt><dd>Разработать фирменный стиль фестиваля высокой моды и выставки тканей YOJI'S High Fashion Show (Москва, 12.09.2027) и собрать афишу, набор участника, буклет, навигацию и мерч в одну систему.</dd><dt class="small">Решение</dt><dd>Концепция на стыке экспериментальной моды, минимализма и индустриальной эстетики. Чёрно-белая палитра из пяти оттенков серого, острый «рваный» логотип с компактным знаком и паттерн из металлической сетки на бетонной фактуре. Одни и те же знак, шрифт и фактура работают в афише, бейджах, расписании, буклете, браслете, пиктограммах и мерче.</dd></dl></div><div class="gp land"><div class="w wide" tabindex="0" role="button" aria-label="Открыть: Титульный слайд"><div class="fr"><div class="px"><img  src="assets/img-02.jpg" alt="YOJI'S — Титульный слайд" loading="lazy"></div></div><div class="cap"><h3>Титульный слайд</h3><span class="small">Презентация</span></div></div><div class="w" tabindex="0" role="button" aria-label="Открыть: Логотип"><div class="fr"><div class="px"><img  src="assets/img-03.jpg" alt="YOJI'S — Логотип" loading="lazy"></div></div><div class="cap"><h3>Логотип</h3><span class="small">Основная пара и компактные версии</span></div></div><div class="w" tabindex="0" role="button" aria-label="Открыть: Цвета и паттерн"><div class="fr"><div class="px"><img  src="assets/img-04.jpg" alt="YOJI'S — Цвета и паттерн" loading="lazy"></div></div><div class="cap"><h3>Цвета и паттерн</h3><span class="small">Пять оттенков серого и сетка</span></div></div><div class="w" tabindex="0" role="button" aria-label="Открыть: Афиша"><div class="fr"><div class="px"><img data-feat  src="assets/img-05.jpg" alt="YOJI'S — Афиша" loading="lazy"></div></div><div class="cap"><h3>Афиша</h3><span class="small">Мокап на стене</span></div></div><div class="w" tabindex="0" role="button" aria-label="Открыть: Набор участника"><div class="fr"><div class="px"><img  src="assets/img-06.jpg" alt="YOJI'S — Набор участника" loading="lazy"></div></div><div class="cap"><h3>Набор участника</h3><span class="small">Бейдж, расписание, браслет</span></div></div><div class="w" tabindex="0" role="button" aria-label="Открыть: Буклет"><div class="fr"><div class="px"><img  src="assets/img-07.jpg" alt="YOJI'S — Буклет" loading="lazy"></div></div><div class="cap"><h3>Буклет</h3><span class="small">Развороты и мерч</span></div></div><div class="w" tabindex="0" role="button" aria-label="Открыть: Навигация"><div class="fr"><div class="px"><img  src="assets/img-08.jpg" alt="YOJI'S — Навигация" loading="lazy"></div></div><div class="cap"><h3>Навигация</h3><span class="small">Пиктограммы и указатели</span></div></div><div class="w wide" tabindex="0" role="button" aria-label="Открыть: Общий планшет"><div class="fr"><div class="px"><img  src="assets/img-09.jpg" alt="YOJI'S — Общий планшет" loading="lazy"></div></div><div class="cap"><h3>Общий планшет</h3><span class="small">Вся система на одном листе</span></div></div><div class="w" tabindex="0" role="button" aria-label="Открыть: Вывод"><div class="fr"><div class="px"><img  src="assets/img-10.jpg" alt="YOJI'S — Вывод" loading="lazy"></div></div><div class="cap"><h3>Вывод</h3><span class="small">Итог проекта</span></div></div></div></div>
+
+</section>
+
+<section id="feat">
+  <div class="top small"><span>Проект в фокусе — YOJI'S</span><span id="fc">1 / 3</span></div>
+  <div class="box"><div id="fart"></div></div>
+  <div class="tx">
+    <div class="ph"><div class="serif">Бетон<br>как фон</div></div>
+    <div class="ph"><div class="serif">Сетка<br>как паттерн</div></div>
+    <div class="ph"><div class="serif">Знак<br>как лезвие</div></div>
+  </div>
+</section>
+
+<section id="serv">
+  <h2 class="serif rv">Услуги</h2>
+  <div id="svl"></div>
+</section>
+
+<section id="phil">
+  <p id="pp">Хороший дизайн не кричит. Он оставляет место для взгляда, вычёркивает лишнее и доверяет форме больше, чем украшению.</p>
+</section>
+
+<section id="contact">
+  <span class="small rv">Новый проект?</span>
+  <a class="big rv ul" href="mailto:coldstable@gmail.com">coldstable<br>@gmail.com</a>
+  <div class="soc">
+    <ul><li><a class="ul" href="https://t.me/coldstable" target="_blank" rel="noopener">Telegram @coldstable</a></li><li><a class="ul" href="mailto:coldstable@gmail.com">coldstable@gmail.com</a></li><li><a class="ul" href="mailto:kiryuscha.egorovegorov@yandex.ru">Почта Яндекс</a></li></ul>
+    <span class="small">Москва</span>
+  </div>
+</section>
+</main>
+<footer><span class="small">© 2026 Кирилл Егоров</span><a href="#hero" id="top" data-go class="small">Наверх <b aria-hidden="true">↑</b></a></footer>
+
+<div id="col" role="dialog" aria-modal="true" aria-label="Коллекция постеров" data-lenis-prevent><button id="colx" class="small">Закрыть ✕</button><div class="ch"><h2 class="serif">Коллекция<br>постеров</h2><span class="small">11 работ · 4 серии</span></div><div class="grp"><div class="gi"><span class="small">01 / Киноплакаты</span><h3 class="gt serif rv">American<br>Psycho</h3><dl><dt class="small">Задача</dt><dd>Показать один фильм в трёх интонациях: громкая афиша, ретро-обложка и холодный минимализм. Каждый постер должен читаться отдельно, а вместе они должны выглядеть как одна серия.</dd><dt class="small">Решение</dt><dd>Единая палитра: чёрный, белый и один красный акцент. Шрифт с засечками проходит через все три работы, а мелкий кинотитр и логотипы студий задают реалистичный ритм. Крик и брызги в афише, рамка в духе VHS-обложки и визитка на красном фоне дают три разных настроения.</dd></dl></div><div class="gp"><div class="w" tabindex="0" role="button" aria-label="Открыть: Афиша"><div class="fr"><div class="px"><img src="assets/img-11.jpg" alt="Афиша" loading="lazy"></div></div><div class="cap"><h3>Афиша</h3><span class="small">1 / 3 · крик и брызги</span></div></div><div class="w" tabindex="0" role="button" aria-label="Открыть: Обложка"><div class="fr"><div class="px"><img src="assets/img-12.jpg" alt="Обложка" loading="lazy"></div></div><div class="cap"><h3>Обложка</h3><span class="small">2 / 3 · стиль VHS</span></div></div><div class="w" tabindex="0" role="button" aria-label="Открыть: Визитка"><div class="fr"><div class="px"><img src="assets/img-13.jpg" alt="Визитка" loading="lazy"></div></div><div class="cap"><h3>Визитка</h3><span class="small">3 / 3 · минимализм</span></div></div></div></div>
+<div class="grp"><div class="gi"><span class="small">02 / Серия персонажей</span><h3 class="gt serif rv">Neon Genesis<br>Evangelion</h3><dl><dt class="small">Задача</dt><dd>Собрать трёх пилотов в коллекцию: у каждого свой характер, но на полке они должны выглядеть как один набор.</dd><dt class="small">Решение</dt><dd>Общая сетка для всех трёх постеров: огромное имя за фигурой, чёрная табличка UNIT и нижний цветной блок с описанием. Цвет блока берётся из костюма пилота: бирюзовый, голубой, бордовый. Персонаж выходит поверх текста и создаёт глубину, а знаки NERV и EVA работают как элементы «технической документации».</dd></dl></div><div class="gp"><div class="w" tabindex="0" role="button" aria-label="Открыть: Синдзи Икари"><div class="fr"><div class="px"><img src="assets/img-14.jpg" alt="Синдзи Икари" loading="lazy"></div></div><div class="cap"><h3>Синдзи Икари</h3><span class="small">Unit-01</span></div></div><div class="w" tabindex="0" role="button" aria-label="Открыть: Рэй Аянами"><div class="fr"><div class="px"><img src="assets/img-15.jpg" alt="Рэй Аянами" loading="lazy"></div></div><div class="cap"><h3>Рэй Аянами</h3><span class="small">Unit-00</span></div></div><div class="w" tabindex="0" role="button" aria-label="Открыть: Аска Лэнгли"><div class="fr"><div class="px"><img src="assets/img-16.jpg" alt="Аска Лэнгли" loading="lazy"></div></div><div class="cap"><h3>Аска Лэнгли</h3><span class="small">Unit-02</span></div></div></div></div>
+<div class="grp"><div class="gi"><span class="small">03 / Редакционная вёрстка</span><h3 class="gt serif rv">Типографика<br>и сетка</h3><dl><dt class="small">Задача</dt><dd>Превратить постер в редакционную полосу, где крупный заголовок, изображения и мелкий текст подчиняются одной модульной сетке, но у каждой темы своя эпоха.</dd><dt class="small">Решение</dt><dd>Для каждой темы подобран свой язык: чёрно-белая японская газета с высококонтрастным манга-материалом, синяя советская печать с чертежами и скруглёнными рамками, широкий полароидный гротеск на мятой бумаге. Заголовок служит якорем, модули разного размера создают ритм, а мелкая подпись добавляет фактуру.</dd></dl></div><div class="gp"><div class="w" tabindex="0" role="button" aria-label="Открыть: The End of Evangelion"><div class="fr"><div class="px"><img src="assets/img-17.jpg" alt="The End of Evangelion" loading="lazy"></div></div><div class="cap"><h3>The End of Evangelion</h3><span class="small">Газетная полоса</span></div></div><div class="w" tabindex="0" role="button" aria-label="Открыть: Космос"><div class="fr"><div class="px"><img src="assets/img-18.jpg" alt="Космос" loading="lazy"></div></div><div class="cap"><h3>Космос</h3><span class="small">Советский футуризм</span></div></div><div class="w" tabindex="0" role="button" aria-label="Открыть: Polaroid"><div class="fr"><div class="px"><img src="assets/img-19.jpg" alt="Polaroid" loading="lazy"></div></div><div class="cap"><h3>Polaroid</h3><span class="small">Гротеск и бумага</span></div></div></div></div>
+<div class="grp"><div class="gi"><span class="small">04 / Информационные постеры</span><h3 class="gt serif rv">Архив</h3><dl><dt class="small">Задача</dt><dd>Рассказать о художниках-плакатистах военных лет так, чтобы информационный плакат выглядел как архивная папка, а не как школьный стенд.</dd><dt class="small">Решение</dt><dd>Коллаж из газет 1945 года на состаренной бумаге. Сам плакат стоит слева как главный герой, рядом раскрытая записная книга с биографией и ряд наград с подписями. Плакатный гротеск для заголовков в паре с рукописным шрифтом для заметок.</dd></dl></div><div class="gp"><div class="w" tabindex="0" role="button" aria-label="Открыть: Родина-мать зовёт!"><div class="fr"><div class="px"><img src="assets/img-20.jpg" alt="Родина-мать зовёт!" loading="lazy"></div></div><div class="cap"><h3>Родина-мать зовёт!</h3><span class="small">Ираклий Тоидзе</span></div></div><div class="w" tabindex="0" role="button" aria-label="Открыть: Смерть фашистской гадине!"><div class="fr"><div class="px"><img src="assets/img-21.jpg" alt="Смерть фашистской гадине!" loading="lazy"></div></div><div class="cap"><h3>Смерть фашистской гадине!</h3><span class="small">Алексей Кокорекин</span></div></div></div></div>
+</div>
+<div id="lb" role="dialog" aria-label="Просмотр постера"><span class="small">Закрыть ✕</span><img alt=""></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script>
+(function(){
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $=(s,c=document)=>c.querySelector(s),$$=(s,c=document)=>[...c.querySelectorAll(s)];
+/* placeholder visuals: flat grey SVG compositions, easy to replace with <img> */
+const P=['#141414','#1E1E1E','#2B2B2B','#F5F7FA'];
+function art(i){const o={
+0:`<rect width="800" height="1000" fill="${P[1]}"/><circle cx="470" cy="420" r="260" fill="${P[3]}"/><rect x="0" y="780" width="800" height="1" fill="${P[3]}"/><circle cx="470" cy="420" r="150" fill="${P[1]}"/>`,
+1:`${[0,1,2,3,4,5,6,7].map(k=>`<rect x="${k*100}" y="0" width="${k%2?40:100}" height="1000" fill="${k%3?P[2]:P[1]}"/>`).join('')}<rect x="100" y="620" width="600" height="14" fill="${P[3]}"/>`,
+2:`<rect width="800" height="1000" fill="${P[0]}"/><text x="400" y="780" font-family="Instrument Serif,serif" font-size="980" text-anchor="middle" fill="${P[2]}">A</text><text x="60" y="940" font-family="Inter Tight,sans-serif" font-size="22" fill="${P[3]}">Specimen No. 07</text>`,
+3:`<rect width="800" height="1000" fill="${P[1]}"/>${[380,300,220,140,60].map((r,k)=>`<circle cx="400" cy="500" r="${r}" fill="none" stroke="${k?P[2]:P[3]}" stroke-width="${k?36:2}"/>`).join('')}`,
+4:`<rect width="800" height="1000" fill="${P[0]}"/>${Array.from({length:30},(_,k)=>{const x=k%5,y=(k/5|0);return`<rect x="${80+x*140}" y="${100+y*140}" width="100" height="100" fill="${(x*y+k)%4==0?P[3]:P[2]}"/>`}).join('')}`};
+return`<svg viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Проектный визуал-заглушка">${o[i]}</svg>`}
+$('#fart').innerHTML='<img alt="" src="'+$('[data-feat]').src+'">';
+const S=[['Айдентика','Логотип, система знаков, правила использования и гайдлайны.','Знак · Палитра · Гайд'],['Типографика','Подбор и настройка шрифтов, вёрстка книг, афиш и каталогов.','Шрифты · Сетка · Вёрстка'],['Постеры и печать','Серии афиш, упаковка, полиграфия с подготовкой к производству.','Афиши · Упаковка · Печать'],['Арт-дирекция','Визуальная стратегия проекта от идеи до запуска.','Концепт · Контроль · Команда']];
+$('#svl').innerHTML=S.map((s,i)=>`<div class="sv"><button aria-expanded="false" aria-controls="sd${i}"><span class="nm">${s[0]}</span><span class="pm"></span></button><div class="d" id="sd${i}"><div><p>${s[1]}</p><span class="small">${s[2]}</span></div></div></div>`).join('');
+$$('.sv').forEach(el=>{const b=$('button',el);const set=o=>{el.classList.toggle('open',o);b.setAttribute('aria-expanded',o)};b.onclick=()=>{const o=!el.classList.contains('open');$$('.sv').forEach(x=>{x.classList.remove('open');$('button',x).setAttribute('aria-expanded',false)});set(o)};
+if(matchMedia('(hover:hover)').matches)el.addEventListener('mouseenter',()=>{$$('.sv').forEach(x=>x.classList.remove('open'));set(true)});
+$('.d',el).addEventListener('transitionend',()=>window.ScrollTrigger&&ScrollTrigger.refresh())});
+/* text splitting */
+$$('.rv').forEach(el=>{el.innerHTML=el.innerHTML.split('<br>').map(t=>`<span class="l"><span class="i">${t}</span></span>`).join('')});
+$$('.words').forEach(el=>{el.innerHTML=el.textContent.split(' ').map(w=>`<span class="wd" style="opacity:1;overflow:hidden;vertical-align:top"><span class="i" style="display:inline-block">${w}</span></span>`).join(' ')});
+const pp=$('#pp');pp.innerHTML=pp.textContent.split(' ').map(w=>`<span class="wd">${w}</span>`).join(' ');
+
+/* nav hover: text roll */
+$$('.nl').forEach(a=>{const t=a.textContent;a.innerHTML=`<span class="r"><span data-t="${t}">${t}</span></span>`});
+/* collection overlay */
+const col=$('#col');let colOpen=false,lastF=null;
+function colSet(o){colOpen=o;if(o)lastF=document.activeElement;
+ if(RM){col.style.visibility=o?'visible':'hidden';col.style.clipPath=o?'inset(0)':'inset(0 0 100% 0)'}
+ else{gsap.set(col,{visibility:'visible'});gsap.to(col,{clipPath:o?'inset(0 0 0% 0)':'inset(0 0 100% 0)',duration:1,ease:'expo.inOut',onComplete:()=>{if(!o)col.style.visibility='hidden'}})}
+ lenis&&(o?lenis.stop():lenis.start());
+ if(o){col.scrollTop=0;setTimeout(()=>{window.ScrollTrigger&&ScrollTrigger.refresh();$('#colx').focus()},900)}else lastF&&lastF.focus()}
+$('#colb').onclick=()=>colSet(true);$('#colx').onclick=()=>colSet(false);
+/* lightbox */
+const lb=$('#lb');let lbo=false;
+function lbSet(o,w){lbo=o;if(o){const im=$('img',w);$('img',lb).src=im.src;$('img',lb).alt=im.alt}lb.classList.toggle('on',o);lenis&&(o?lenis.stop():(colOpen||lenis.start()))}
+document.addEventListener('click',e=>{const w=e.target.closest('.w');if(w&&!lbo)lbSet(true,w);else if(lbo)lbSet(false)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(lbo)lbSet(false);else if(colOpen)colSet(false)}if(e.key==='Enter'&&!lbo&&document.activeElement.classList.contains('w'))lbSet(true,document.activeElement)});
+/* navigation */
+let lenis=null;
+function go(t){const el=$(t);if(!el)return;lenis?lenis.scrollTo(el,{duration:1.6,easing:x=>1-Math.pow(1-x,4)}):el.scrollIntoView({behavior:RM?'auto':'smooth'})}
+const menu=$('#menu'),mb=$('#mb');let mo=false;
+function toggle(f){mo=f===undefined?!mo:f;mb.setAttribute('aria-expanded',mo);mb.textContent=mo?'Закрыть':'Меню';
+if(RM){menu.style.visibility=mo?'visible':'hidden';menu.style.clipPath=mo?'inset(0)':'inset(0 0 100% 0)';return}
+gsap.set(menu,{visibility:'visible'});gsap.to(menu,{clipPath:mo?'inset(0 0 0% 0)':'inset(0 0 100% 0)',duration:.9,ease:'expo.inOut',onComplete:()=>{if(!mo)menu.style.visibility='hidden'}});
+lenis&&(mo?lenis.stop():lenis.start())}
+mb.onclick=()=>toggle();
+document.addEventListener('click',e=>{const a=e.target.closest('[data-go]');if(!a)return;e.preventDefault();const was=mo;if(mo)toggle(false);setTimeout(()=>go(a.getAttribute('href')),was?500:0)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&mo)toggle(false)});
+
+/* preloader counter */
+const pn=$('#pn'),pre=$('#pre');
+function start(){
+ if(RM){pre.remove();$$('.wd').forEach(w=>w.style.opacity=1);return}
+ gsap.registerPlugin(ScrollTrigger);
+ lenis=new Lenis({duration:1.2,smoothWheel:true});
+ lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0);
+ lenis.stop();
+ const cnt={v:0},tl=gsap.timeline();
+ tl.to('#pre .ln',{scaleX:1,duration:1.9,ease:'power2.inOut'},0)
+  .to(cnt,{v:100,duration:1.9,ease:'power2.inOut',onUpdate:()=>pn.textContent=Math.round(cnt.v)},0)
+  .to('#pre .n,#pre .small',{yPercent:-30,opacity:0,duration:.6,ease:'power3.in'},2.1)
+  .to(pre,{clipPath:'inset(0 0 100% 0)',duration:1.1,ease:'expo.inOut'},2.3)
+  .from('#hero h1 .i',{yPercent:110,duration:1.4,stagger:.12,ease:'expo.out'},3.0)
+  .from('#hero .hmeta .i',{yPercent:110,duration:1,ease:'expo.out'},3.3)
+  .from('#hero .hmeta',{borderTopColor:'transparent',duration:1},3.3)
+  .from('nav',{opacity:0,y:-16,duration:1,ease:'power3.out'},3.5)
+  .add(()=>{lenis.start();pre.remove()},3.6);
+ build();
+}
+function build(){
+ /* progress */
+ gsap.to('#bar',{scaleX:1,ease:'none',scrollTrigger:{start:0,end:'max',scrub:.3}});
+ /* hero: name shrinks and drifts as you leave */
+ gsap.to('#hero h1',{scale:.78,yPercent:-12,opacity:.25,ease:'none',scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:true}});
+ /* mask-line reveals for all remaining .rv blocks */
+ $$('.rv').forEach(el=>{if(el.closest('#hero')||el.closest('#col'))return;gsap.from($$('.i',el),{yPercent:110,duration:1.3,stagger:.1,ease:'expo.out',scrollTrigger:{trigger:el,start:'top 88%'}})});
+ /* about: word-by-word mask rise */
+ gsap.from($$('#about .words .i'),{yPercent:105,duration:1.1,stagger:.035,ease:'expo.out',scrollTrigger:{trigger:'#about .words',start:'top 80%'}});
+ /* about portrait: clip reveal, settle scale, parallax */
+ gsap.timeline({scrollTrigger:{trigger:'.pf',start:'top 85%'}}).to('.pf',{clipPath:'inset(0% 0 0 0)',duration:1.5,ease:'expo.inOut'}).from('.pf img',{scale:1.3,duration:1.9,ease:'expo.out'},0);
+ gsap.fromTo('.pf img',{yPercent:-3},{yPercent:3,ease:'none',scrollTrigger:{trigger:'.pf',start:'top bottom',end:'bottom top',scrub:true}});
+ /* group text */
+ $$('#works .gi dl').forEach(d=>gsap.from([...d.children],{y:24,opacity:0,duration:1,stagger:.12,ease:'power3.out',scrollTrigger:{trigger:d,start:'top 88%'}}));
+ /* collection overlay: own scroller */
+ gsap.from('.cb',{opacity:0,y:30,duration:1.1,ease:'power3.out',scrollTrigger:{trigger:'.cb',start:'top 92%'}});
+ const sc={scroller:'#col'};
+ $$('#col .w').forEach(w=>{gsap.timeline({scrollTrigger:{...sc,trigger:w,start:'top 92%'}}).to($('.fr',w),{clipPath:'inset(0% 0 0 0)',duration:1.3,ease:'expo.inOut'}).from($('img',w),{scale:1.25,duration:1.6,ease:'expo.out'},0)});
+ $$('#col .gt .i').forEach(i=>gsap.from(i,{yPercent:110,duration:1.2,ease:'expo.out',scrollTrigger:{...sc,trigger:i.closest('.gt'),start:'top 92%'}}));
+ $$('#col .gi dl').forEach(d=>gsap.from([...d.children],{y:24,opacity:0,duration:1,stagger:.12,ease:'power3.out',scrollTrigger:{...sc,trigger:d,start:'top 92%'}}));
+ /* works: clip-path reveal + inner scale + parallax */
+ $$('#works .w').forEach((w,i)=>{const fr=$('.fr',w),px=$('.px',w),svg=$('img',w);
+  gsap.timeline({scrollTrigger:{trigger:w,start:'top 85%'}})
+   .to(fr,{clipPath:'inset(0% 0 0 0)',duration:1.4,ease:'expo.inOut'})
+   .from(svg,{scale:1.35,duration:1.8,ease:'expo.out'},0)
+   .from($$('.cap > *',w),{y:24,opacity:0,duration:1,stagger:.1,ease:'power3.out'},.7);
+  gsap.fromTo(px,{yPercent:-5},{yPercent:5,ease:'none',scrollTrigger:{trigger:w,start:'top bottom',end:'bottom top',scrub:true}})});
+ /* featured: pinned, scroll-driven */
+ const phs=$$('#feat .ph'),fc=$('#fc');
+ const ft=gsap.timeline({defaults:{ease:'none'},scrollTrigger:{trigger:'#feat',start:'top top',end:'+=320%',pin:true,scrub:.8,anticipatePin:1,onUpdate:s=>{fc.textContent=(Math.min(2,Math.floor(s.progress*3))+1)+' / 3'}}});
+ ft.to('#feat .box',{clipPath:innerWidth>820?'inset(0% 0% 0% 0%)':'inset(0% 0% 0% 0%)',duration:1.2,ease:'power2.inOut'},0)
+   .to('#feat .box img',{scale:1,duration:3},0)
+   .fromTo(phs[0],{yPercent:0},{yPercent:-120,opacity:0,duration:.5},1.1)
+   .fromTo(phs[1],{yPercent:120,opacity:0},{yPercent:0,opacity:1,duration:.5},1.3)
+   .to('#feat .box img',{rotate:8,duration:1.2},1.4)
+   .fromTo(phs[1],{yPercent:0},{yPercent:-120,opacity:0,duration:.5},2.3)
+   .fromTo(phs[2],{yPercent:120,opacity:0},{yPercent:0,opacity:1,duration:.5},2.5)
+   .to('#feat .box img',{rotate:0,scale:1.15,duration:1.2},2.5)
+   .to({}, {duration:.4});
+ /* services */
+ gsap.from('.sv',{opacity:0,y:30,duration:1.1,stagger:.12,ease:'power3.out',scrollTrigger:{trigger:'#svl',start:'top 85%'}});
+ /* philosophy: words light up as you scroll */
+ gsap.to($$('#pp .wd'),{opacity:1,stagger:.5,ease:'none',scrollTrigger:{trigger:'#phil',start:'top 65%',end:'bottom 70%',scrub:true}});
+ /* contact: email scales in */
+ gsap.from('#contact .big',{scale:.92,transformOrigin:'0 50%',ease:'none',scrollTrigger:{trigger:'#contact',start:'top 80%',end:'center 60%',scrub:true}});
+ gsap.from('.soc > *',{y:20,opacity:0,stagger:.12,duration:1,ease:'power3.out',scrollTrigger:{trigger:'.soc',start:'top 92%'}});
+ addEventListener('load',()=>ScrollTrigger.refresh());
+}
+/* wait for fonts so measurements are right */
+(document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(start);
+})();
+</script>
+</body>
+</html>
